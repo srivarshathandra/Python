@@ -3,14 +3,14 @@
 #     return f"Hello, {name}!" # the function returns a greeting message that includes the name passed as an argument
 
 
-# def add():
-#     a=10
-#     b=3
-#     print(a+b)
+def add():
+    a=10
+    b=3
+    print(a+b)
     
-# add()# the function returns the sum of a and b
+add()# the function returns the sum of a and b
 # # python_functions.py
-# 
+
 
 # def mul():
 #     a=10
@@ -18,7 +18,7 @@
 #     print(a*b)
 # mul()# the function returns the product of a and b
 
-## real life secenerio: dashboard accessing
+# # real life secenerio: dashboard accessing
 # register---- login--- password
 
 # def register():
@@ -37,7 +37,7 @@
 #     # code
 #     abc()
 
-# types of user defined functions:
+# # types of user defined functions:
 
 # a=10
 # b=20
@@ -68,7 +68,7 @@
 # then it will print the sum of a and b after it gets disapeared the the c after print(c) will be printed.
 
 
-## function with arguements and return type
+# # function with arguements and return type
 # a=int(input("enter the number:"))
 # b=int(input("enter the number:"))
 # def xyz(x,y):
@@ -96,7 +96,7 @@
 #    print(a)
 # abc(name="varsha", age=25, location="pune")
 
-# tuple type example
-def abc(*a):
-    print(a)
-abc(1,2,3,4,5,6,7,8,9,10)
+# # tuple type example
+# def abc(*a):
+#     print(a)
+# abc(1,2,3,4,5,6,7,8,9,10)
