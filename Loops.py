@@ -6,17 +6,23 @@
 #         if i%2==0:
 #             sum+=i
 #     return sum
-# print("The sum of even numbers between 1 and 10 is:",sum_of_Even())
+# print(sum_of_Even())
 
-#  checking the num is palindrome or not using conditional statement
+# Using while loop find even and sum, product range between 1 to 10
+def sum_of_even():
+    total=0
+    i=1
+    while i<=10:
+        if i%2==0:
+            total+=i
+        i+=1
+    return total
+print(sum_of_even())    
+# Print -1 to -100 and -100 to -1 using for loops
 
-number=int(input("Enter a number: "))
-rev=0
-t=number
-while t>0:
-    rev=rev*10+t%10
-    t//=10
-    if number==rev:
-        print("The number is a palindrome")
-    else:        
-        print("The number is not a palindrome")    
+def print_negative():
+    for i in range(-1,-101,-1):
+        print(i,end=" ")
+    print()
+    for i in range(-100,0):
+        print(i,end=" ")
