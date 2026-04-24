@@ -27,14 +27,14 @@ class Course:
 class ProgrammingCourse(Course):
     def show_programming_course(self,Language,Duration):
         super().show_course()
-        print("language",Language)
-        print("duration",Duration)
+        print("language :",Language)
+        print("duration :",Duration)
     
 o1=ProgrammingCourse()
 o2=ProgrammingCourse()
 o1.show_programming_course("Python", "6 months")
 o2.show_programming_course("Java", "5 months")
-
+print("------------------")
 # 🧬 2️⃣ MULTIPLE INHERITANCE TASK
 # 🎯 Scenario: Smart Phone Features
 # 👉 Parent 1: Camera
@@ -56,21 +56,23 @@ o2.show_programming_course("Java", "5 months")
 
 
 class Camera:
-    def take_photo(self):
-        print("camera_mp: 1080 MP")
+    def take_photo(self,camera_mp):
+        print("camera_mp :",camera_mp)
 
 class MusicPlayer:
-    def play_music(self):
-        print("Musicplayer : Play Music ")
+    def play_music(self,brand):
+        print("Musicplayer :", brand)
         
 class Smartphone(Camera,MusicPlayer):
-    def show_details(self):
-        print("Phone_Model: Samsung")
-        self.take_photo()
-        self.play_music()
+    def show_details(self,model,camera_mp,brand):
+        print("Phone_Model :", model)
+        self.take_photo(camera_mp)
+        self.play_music(brand)
 
-p=Smartphone()
-p.show_details()
+p1=Smartphone()
+p2=Smartphone()
+p1.show_details("Samsung", "108 MP", "Play Music")
+p2.show_details("iPhone", "48 MP", "Apple Music")
 
         
     
