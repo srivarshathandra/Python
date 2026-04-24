@@ -21,18 +21,19 @@
 
 class Course:
     def show_course(self):
-        print("course_name : Data science full-stack course ")
+        print("course_name : Data science course ")
         print("price : 50000")
         
 class ProgrammingCourse(Course):
-    def show_programming_course(self):
+    def show_programming_course(self,Language,Duration):
         super().show_course()
-        print("language : Python,SQL,Excel,Statistics")
-        print("duration :  8 months")
+        print("language",Language)
+        print("duration",Duration)
     
-o=ProgrammingCourse()
-o.show_programming_course()
-
+o1=ProgrammingCourse()
+o2=ProgrammingCourse()
+o1.show_programming_course("Python", "6 months")
+o2.show_programming_course("Java", "5 months")
 
 # 🧬 2️⃣ MULTIPLE INHERITANCE TASK
 # 🎯 Scenario: Smart Phone Features
