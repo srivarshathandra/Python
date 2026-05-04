@@ -35,6 +35,7 @@ o2=ProgrammingCourse()
 o1.show_programming_course("Python", "6 months")
 o2.show_programming_course("Java", "5 months")
 print("------------------")
+
 # 🧬 2️⃣ MULTIPLE INHERITANCE TASK
 # 🎯 Scenario: Smart Phone Features
 # 👉 Parent 1: Camera
